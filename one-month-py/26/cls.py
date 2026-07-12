@@ -82,3 +82,16 @@
 # print("translate:", "abc".translate(trans_table))
 # print("upper:", "hello".upper())
 # print("zfill:", "42".zfill(5))
+
+while True:
+    print('--------МЕНЮ--------\n1 - Добавить\n2 - Обновить\n0 - Выход\n------------\nВыбор комманды: ')
+    n = input()
+
+    match n:
+        case '1':
+            print('')
+        case '0':
+            print('\nУспеный выход')
+            break
+        case _:
+            print('\nНеизвестная комманда!')
