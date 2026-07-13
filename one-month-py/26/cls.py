@@ -82,14 +82,29 @@
 # print("translate:", "abc".translate(trans_table))
 # print("upper:", "hello".upper())
 # print("zfill:", "42".zfill(5))
+lict = []
 
 while True:
-    print('--------МЕНЮ--------\n1 - Добавить\n2 - Обновить\n0 - Выход\n------------\nВыбор комманды: ')
-    n = input()
+    print('\n--------МЕНЮ--------\n1 - Добавить\n2 - Обновить по айди\n3 - Посмотреть все записи\n0 - Выход\n------------\n')
+    n = input('Выбор комманды: ')
 
     match n:
         case '1':
-            print('')
+            name = input('Добавить: ')
+            lict.append(name)
+        case '2':
+            try:
+                it = int(input('Введите айди: '))
+                title = input('Обновить: ')
+                name[it] = title
+                print(f'Успешно обновленно запис с айди {it}')
+            except:
+                print('Запис с такым айди не найдено!')
+        case '3':
+            print('\nБаза Данных: ')
+            for i in lict:
+                print(i, end=' ')
+            print()
         case '0':
             print('\nУспеный выход')
             break

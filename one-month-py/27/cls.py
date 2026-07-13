@@ -22,7 +22,7 @@
 #     if i == len(lict):
 #         print(i)
 #     else:
-#         print(i, end=',')
+#          print(i, end=',')
 
 # colors = input('Input the colors:\n>>> ').split()
 
@@ -31,3 +31,26 @@
 #     print(colors[i-1],end=' ')
 #     i-=1
 
+# n = input('Enter:\n>>> ').split()
+
+# for i in n:
+#     k = n.index(i)
+#     if k % 2 == 0:
+#         print(i, end=' ')
+
+# n = input('Enter:\n>>> ').split()
+# i = 0
+# print()
+# while i<len(n):
+#     if i % 2 == 0:
+#         print(n[i].upper(), end=' ')
+#     i+=1
+# print('\n')
+
+# n = input('Enter:\n>>> ').split()
+# intiger = []
+# string = []
+# for i in n:
+
+# print(intiger)
+# print(string)
